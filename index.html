@@ -42,7 +42,7 @@
             <div id="nav-principal" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right hulnav">
                     <li class="active"><a href="#Inicio" title="Volver arriba">Inicio <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#Inicio" title="Volver arriba">Nosotros</a></li>
+                    <li><a href="#Nosotros" title="Acerca de...">Nosotros</a></li>
                     <li><a href="#Ejes" title="">Ejes</a></li>
                     <li><a href="#Filosofía" title="">Filosofía</a></li>
                     <li><a href="#Servicios" title="">Servicios</a></li>
@@ -55,27 +55,53 @@
         </div>
     </nav>
 
-    <div id="Inicio" style="position: relative">
+    <main>
+        <div>
 
-        <div id="particulas" class="portada-back"></div>
+            <div id="particulas" class="portada-back"></div>
 
-        <header class="portada">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-offset-2 col-sm-offset-3 col-xs-8 col-sm-6">
-                        <div class="bienvenida">
-                            <h1>Bienvenidos a <span>Hoatzin</span> <small> - Cooperativa de Base Tecnológica</small></h1>
+            <header id="Inicio" class="portada">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-offset-2 col-sm-offset-3 col-xs-8 col-sm-6">
+                            <div class="bienvenida">
+                                <h1>Bienvenidos a <span>Hoatzin</span> <small> - Cooperativa de Base Tecnológica</small></h1>
 
-                            <div class="bienvenida-next hidden-xs">
-                                <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+                                <div class="bienvenida-next hidden-xs">
+                                    <a href="#Nosotros" title="¡Sigamos!">
+                                        <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
-    </div>
+        </div>
+
+        <div class="contenido">
+            <section id="Nosotros" class="nosotros">
+                <div class="margen">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-offset-1 col-sm-5">
+                                <img src="img/nosotros.png">
+                            </div>
+                            <div class="col-xs-12 col-sm-offset-1 col-sm-4">
+                                <h1 class="nTitulo">Acerca de nosotros</h1>
+                                <hr class="hSeparador">
+                                <p class="nDescripcion">Somos un grupo interdisciplinario que une esfuerzos para establecer
+                                    un sistema cooperante que coadyuve a una lógica productiva de organización, de
+                                    distribución superior que involucra nuevas formas y estrategias para el desarrollo de
+                                    sistemas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

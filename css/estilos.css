@@ -104,3 +104,36 @@
     color: #f5e79e;
     transition: all 0.5s linear 0.2s;
 }
+
+/************************* Contenido *************************/
+
+.contenido {
+    position: absolute;
+    margin-top: 100vh;
+}
+
+.contenido h1, .contenido h2, .contenido h3 {
+    font-family: Raleway, sans-serif;
+}
+
+.hSeparador {
+    margin-left: 0;
+    text-align: left;
+    border-top: 5px solid #701B11;
+    width: 40%;
+}
+
+.margen {
+    margin-top: 10rem;
+}
+
+/* Nosotros */
+
+.nosotros {
+    margin-top: 5rem;
+}
+
+.nosotros .nDescripcion {
+    margin-top: 3rem;
+    font-size: 3rem;
+}

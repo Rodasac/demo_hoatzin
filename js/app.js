@@ -124,3 +124,37 @@ $(document).ready(function(){
         }, 900, 'swing');
     });
 });
+
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+    if ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
+        return elem;
+    }
+    else {
+        return null;
+    }
+}
+
+function clearItems(elem, id) {
+    var items = $(elem).children();
+    items.removeClass("active");
+
+    for(var i = 0; i < items.length; i++){
+        if ($(items[i]).children().attr("href") == "#" + id) {
+            $(items[i]).addClass("active");
+        }
+    }
+}
+
+$(window).scroll(function() {
+    var scrolled = isScrolledIntoView($('#Inicio, #Nosotros'));
+
+    if (scrolled != null) {
+        console.log();
+        clearItems($(".hulnav"), $(scrolled).attr("id"));
+    }
+});
