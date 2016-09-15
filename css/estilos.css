@@ -1,4 +1,29 @@
 /* Navbar */
+.navbar {
+    background-color: transparent;
+    transition: all 0.5s ease-in-out 0.2s;
+}
+
+.navbar:hover {
+    background-color: #2A160C;
+    transition: all 0.5s ease-in-out 0.2s;
+}
+
+.navbar .navbar-brand {
+    background-image: url("../img/logo-plano.svg");
+    background-size: cover;
+    transition: all 0.5s ease-in-out 0.2s;
+    height: 6.2rem;
+    width: 18.1rem;
+}
+
+.navbar:hover .navbar-brand {
+    background-image: url("../img/logo-plano-neg.svg");
+    background-size: cover;
+    transition: all 0.5s ease-in-out 0.2s;
+    height: 6.2rem;
+    width: 18.1rem;
+}
 
 .hmenu {
     padding: 10px;
@@ -6,4 +31,19 @@
 
 .hulnav {
     padding: 10px;
+}
+
+.navbar .nav li a {
+    transition: all 0.5s linear 0.2s;
+}
+
+.navbar .nav li a:hover {
+    color: #FBC763;
+    transition: all 0.5s linear 0.2s;
+}
+
+.navbar .nav li.active a {
+    color: #080808;
+    background-color: #ECD39A;
+    transition: all 0.5s linear 0.2s;
 }
