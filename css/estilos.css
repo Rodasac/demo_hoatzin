@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 /* Navbar */
 .navbar {
     background-color: transparent;
@@ -114,6 +118,7 @@
 
 .contenido h1, .contenido h2, .contenido h3 {
     font-family: Raleway, sans-serif;
+    font-size: 3.8rem;
 }
 
 .hSeparador {
@@ -123,17 +128,134 @@
     width: 40%;
 }
 
+.hSeparador-neg {
+    border-top: 5px solid #FBC763;
+}
+
 .margen {
-    margin-top: 10rem;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+}
+
+.capa {
+    height: 100vh;
+}
+
+.descripcion {
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+@media(max-width: 1100px) {
+    .descripcion {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .descripcion {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+    }
 }
 
 /* Nosotros */
 
-.nosotros {
-    margin-top: 5rem;
+
+/* Ejes */
+
+.ejes {
+    background: url("../img/back-ejes.jpg") repeat;
 }
 
-.nosotros .nDescripcion {
-    margin-top: 3rem;
+.ejes h1 {
+    color: #f5e79e;
+    text-shadow: 2px 0 #0f0f0f;
+}
+
+.carta-container {
+    display: inline-block;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+
+    z-index: 1;
+}
+
+.carta {
+    box-shadow: 0 0 5px #0f0f0f;
+    height: 100%;
+    width: 100%;
+
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 0.5s;
+
+    -moz-transform-style: preserve-3d;
+    -moz-transition: all 0.5s;
+
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
+.carta-container:hover .carta{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.carta .lado{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.carta .lado .contenido-carta{
+    margin: 5rem;
+}
+
+.carta .lado .contenido-carta .texto-carta{
     font-size: 3rem;
 }
+
+.carta .lado .contenido-carta ul{
+    font-size: 3rem;
+}
+
+.carta .lado .contenido-carta ul li{
+    list-style-image: url("../img/axis.svg");
+}
+
+@media (max-width: 1100px) {
+    .carta .lado .contenido-carta .texto-carta{
+        font-size: 2rem;
+    }
+
+    .carta .lado .contenido-carta ul{
+        font-size: 2rem;
+    }
+}
+
+.carta .frente{
+    background-color: rgba(236, 211, 154, 0.6);
+    height: 100%;
+    width: 100%;
+}
+
+.carta .atras{
+    background: rgba(240, 240, 240, 0.61);
+    font-family: Raleway, sans-serif;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+/* Filosofía */
+
