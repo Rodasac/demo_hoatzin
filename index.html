@@ -16,6 +16,7 @@
     <meta property="og:type" content="website" />
     
     <meta property="og:title" content="Página oficial Hoatzin" />
+    <meta property="og:site_name" content="Hoatzin Landing Page"/>
     
     <meta property="og:description" 
         content="Somos un grupo interdisciplinario que une esfuerzos para establecer un sistema 
@@ -548,5 +549,45 @@
     <script src="js/owl.carousel.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript">
+  // You probably don't want to use globals, but this is just example code
+  var fbAppId = '1032514546868064';
+
+  // This check is just here to make sure you set your app ID. You don't
+  // need to use it in production. 
+  if (fbAppId === 'replace me') {
+    alert('Please set the fbAppId in the sample.');
+  }
+
+  /*
+   * This is boilerplate code that is used to initialize
+   * the Facebook JS SDK.  You would normally set your
+   * App ID in this code.
+   */
+
+  // Additional JS functions here
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 1032514546868064, // App ID
+      status     : true,    // check login status
+      cookie     : true,    // enable cookies to allow the
+                            // server to access the session
+      xfbml      : true,     // parse page for xfbml or html5
+                            // social plugins like login button below
+      version		 : 'v2.7',  // Specify an API version
+    });
+
+    // Put additional init code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
   </body>
 </html>
