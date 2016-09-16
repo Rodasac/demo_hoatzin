@@ -299,22 +299,28 @@ body {
 
 .proyectos {
     background: url("../img/back-proyectos.jpg") repeat fixed;
+    min-height: 150vh;
+}
+
+.filter-button-group {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .grid {
-    margin: 3rem;
+    margin: 0 auto;
 }
 
+.grid-sizer,
 .grid-item {
     color: #ECD39A;
-    height: 26vh;
-    margin: 0 4% 2% 2%;
-    width: 42%;
+    width: 50%;
 }
 
 @media (max-width: 768px) {
+    .grid-sizer,
     .grid-item {
-        height: 34vh;
+        margin: 0 4% 4% 2%;
         width: 90%;
     }
 }
@@ -327,11 +333,13 @@ body {
     background-color: #701B11;
 }
 
-.grid-item div {
-    margin-top: 3rem;
-    text-align: center;
+.iniciativa {
+    background-color: #C94927;
+}
 
-    transition: all 0.5s ease;
+.grid-item div {
+    margin: 3rem auto;
+    text-align: center;
 }
 
 .grid-item div i {
@@ -341,22 +349,20 @@ body {
 
 .grid-item div h3 {
     font-size: 2rem;
-    transition: all 0.5s ease;
 }
 
 .grid-item div p {
     font-size: 2rem;
+    display: none;
+    margin-bottom: 3rem;
 
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 
     -webkit-transform: rotateX(180deg); /* Safari */
-    transform: rotateX(180deg);
-    transition-property: all;
-    transition-duration: 0.5s, 1s, 1s;
-    transition-timing-function: ease, ease-out;
-    transition-delay: 0s ,0.5s, 1.5s;
+    transform: rotateX(180deg) scale(0);
+    transition: all 0.5s ease 0s;
 }
 
 .grid-item div:hover i {
@@ -366,14 +372,25 @@ body {
 
 .grid-item div:hover p {
     display: block;
-
     -webkit-transform: rotateX(0deg); /* Safari */
-    transform: rotateX(0deg);
+    transform: rotateX(0deg) scale(1);
 
-    transition-property: all;
-    transition-duration: 0.5s, 1s, 1s;
-    transition-timing-function: linear, linear;
-    transition-delay: 0s ,0.5s, 1.5s;
+    transition: all 0.5s ease 0s;
+}
+
+.iniciativa div p {
+    font-size: 1.5rem;
+}
+
+.iniciativa div:hover i {
+    font-size: 2rem;
 }
 
 .grid-item--width2 { width: 50%; }
+
+.grid-item-content {
+    height: 25vh;
+}
+
+/* Desde el Blog */
+

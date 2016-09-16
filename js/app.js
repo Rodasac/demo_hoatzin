@@ -179,9 +179,11 @@ $(document).ready(function() {
 });
 
 $('.grid').isotope({
-    // options
+    masonry: {
+        columnWidth: '.grid-sizer'
+    },
     itemSelector: '.grid-item',
-    layoutMode: 'fitRows'
+    percentPosition: true
 });
 
 // filter items on button click
