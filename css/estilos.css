@@ -279,3 +279,16 @@ body {
         font-size: 1.8rem;
     }
 }
+
+@media (max-width: 768px) {
+    .texto-filosofia {
+        font-size: 1.4rem;
+    }
+}
+
+/* Servicios */
+
+.caja-servicios {
+    text-align: center;
+    width: 70vw;
+}
