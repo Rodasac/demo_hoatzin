@@ -321,7 +321,7 @@ body {
 }
 
 .grid {
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
 }
 
 .grid-sizer,
@@ -415,6 +415,7 @@ body {
 
 .boton-blog {
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 /* Contacto */
