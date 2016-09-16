@@ -132,9 +132,12 @@ body {
     border-top: 5px solid #FBC763;
 }
 
+.hSeparador-all {
+    width: 100%;
+}
+
 .margen {
     margin-top: 15rem;
-    margin-bottom: 10rem;
 }
 
 .capa {
@@ -260,8 +263,7 @@ body {
 /* Filosofía */
 
 .filosofia {
-    background: url("../img/back-filosofia.jpg") repeat;
-    background-attachment: fixed;
+    background: url("../img/back-filosofia.jpg") repeat fixed;
 }
 
 .caja-filosofía {
@@ -290,5 +292,89 @@ body {
 
 .caja-servicios {
     text-align: center;
-    width: 70vw;
+    width: 65vw;
 }
+
+/* Proyectos */
+
+.proyectos {
+    min-height: 100vh;
+    background: url("../img/back-proyectos.jpg") repeat fixed;
+}
+
+.grid {
+    margin: 3rem;
+}
+
+.grid-item {
+    color: #ECD39A;
+    height: 26vh;
+    margin: 0 4% 2% 2%;
+    width: 42%;
+}
+
+@media (max-width: 768px) {
+    .grid-item {
+        height: 34vh;
+        width: 90%;
+    }
+}
+
+.asesoria {
+    background-color: #2A160C;
+}
+
+.desarrollo {
+    background-color: #701B11;
+}
+
+.grid-item div {
+    margin-top: 3rem;
+    text-align: center;
+
+    transition: all 0.5s ease;
+}
+
+.grid-item div i {
+    font-size: 10rem;
+    transition: all 0.5s ease;
+}
+
+.grid-item div h3 {
+    font-size: 2rem;
+    transition: all 0.5s ease;
+}
+
+.grid-item div p {
+    font-size: 2rem;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transform: rotateX(180deg); /* Safari */
+    transform: rotateX(180deg);
+    transition-property: all;
+    transition-duration: 0.5s, 1s, 1s;
+    transition-timing-function: ease, ease-out;
+    transition-delay: 0s ,0.5s, 1.5s;
+}
+
+.grid-item div:hover i {
+    font-size: 6rem;
+    transition: all 0.5s ease;
+}
+
+.grid-item div:hover p {
+    display: block;
+
+    -webkit-transform: rotateX(0deg); /* Safari */
+    transform: rotateX(0deg);
+
+    transition-property: all;
+    transition-duration: 0.5s, 1s, 1s;
+    transition-timing-function: linear, linear;
+    transition-delay: 0s ,0.5s, 1.5s;
+}
+
+.grid-item--width2 { width: 50%; }
