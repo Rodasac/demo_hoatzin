@@ -141,7 +141,7 @@ body {
 }
 
 .capa {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .descripcion {
@@ -298,7 +298,6 @@ body {
 /* Proyectos */
 
 .proyectos {
-    min-height: 100vh;
     background: url("../img/back-proyectos.jpg") repeat fixed;
 }
 
