@@ -410,9 +410,46 @@ body {
 .articulo {
     margin-top: 3rem;
     padding-bottom: 2rem;
-    border-bottom: 0.5px solid #701B11;
+    border-bottom: 1px solid #701B11;
 }
 
 .boton-blog {
     margin-top: 5rem;
+}
+
+/* Contacto */
+
+.contacto {
+    background: url("../img/back-contacto.jpg") no-repeat scroll center;
+    background-size: cover;
+}
+
+.formulario {
+    background-color: rgba(247, 247, 247, 0.65);
+    border-radius: 5px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    text-align: justify;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #2A160C;
+}
+
+.footer-content {
+    padding: 1rem 0 0 1rem;
+}
+
+.footer-content p {
+    color: #dcddde;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer-content p span {
+    color: #FBC763;
 }
